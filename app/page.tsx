@@ -169,8 +169,8 @@ Download my result
 </button>
 
 <ShareButtons
-score={score}
-successProbability={successProbability}
+score={score ?? 0}
+successProbability={successProbability ?? 0}
 />
 </>
 )}
@@ -289,3 +289,4 @@ color: "white",
 fontWeight: 700,
 cursor: "pointer",
 };
+
