@@ -1,5 +1,7 @@
 "use client";
 
+// fix build
+
 export default function ShareButtons({
 score,
 successProbability,
