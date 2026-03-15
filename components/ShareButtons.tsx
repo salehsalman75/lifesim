@@ -4,13 +4,16 @@ export default function ShareButtons({
 score,
 successProbability,
 }: {
-score: number;
-successProbability: number;
+score: number | null;
+successProbability: number | null;
 }) {
+const safeScore = score ?? 0;
+const safeSuccessProbability = successProbability ?? 0;
+
 const shareText = `I just simulated my life in 10 years 🔮
 
-Future score: ${score}/100
-Success probability: ${successProbability}%
+Future score: ${safeScore}/100
+Success probability: ${safeSuccessProbability}%
 
 What score would you get?
 
@@ -88,3 +91,5 @@ Copy result
 </div>
 );
 }
+
+
