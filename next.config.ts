@@ -7,3 +7,4 @@ ignoreBuildErrors: true,
 };
 
 export default nextConfig;
+
